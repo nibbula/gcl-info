@@ -6,8 +6,8 @@ A. Yes I should have.
 
 Q. How to use?
 
-A.
-   1. Dump into `~/info` or something.
+A. 1. Dump into `~/info` or something.
+
    2. Optionally, compress them. Perhaps something like:
    ```
     $ gzip *.info-[0-9]*
