@@ -1,14 +1,18 @@
 #### Info files for Common Lisp
 
 Q. Shouldn't you have... ?
+
 A. Yes I should have.
 
 Q. How to use?
+
 A.
    1. Dump into `~/info` or something.
    2. Optionally, compress them. Perhaps something like:
-      $ gzip *.info-[0-9]*
-   3.
+   ```
+    $ gzip *.info-[0-9]*
+```
+   3. Maybe let emacs in on it:
 ```emacs-lisp
 ;; If wherever you put it isn't already in your info list:
 (setq Info-directory-list (append Info-directory-list '("~/info")))
@@ -32,4 +36,5 @@ A.
    6. Profit??
 
 ♥ to [William F. Schelter](https://www.gnu.org/software/gcl/)
+
 🖕 to international standards bodies.
