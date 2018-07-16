@@ -1,4 +1,6 @@
-#### Info files for Common Lisp
+### Info files for Common Lisp
+
+w/minor fixes, split out from GCL for your (or mostly my) convenience.
 
 Q. Shouldn't you have... ?
 
