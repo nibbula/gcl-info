@@ -979,7 +979,7 @@ File: gcl.info,  Node: write,  Next: write-to-string,  Prev: set-pprint-dispatch
 write, prin1, print, pprint, princ                               [Function]
 ---------------------------------------------------------------------------
 
-`write'  object &key \writekeysstream
+`write'  object &key array base case circle escape gensym length level lines miser-width pprint-dispatch pretty radix readably right-margin stream
 =>  object
 
 `prin'  1 =>  object &optional output-stream object `princ'  object
@@ -994,11 +994,39 @@ Arguments and Values::
 
 object--an object.
 
-output-stream--an output stream designator.  The default is standard
-output.
+output-stream--an output stream designator.  The default is standard output.
 
-\writekeydescriptionsstream--an output stream designator.  The default is
-standard output.
+array---a generalized boolean.
+
+base---a radix.
+
+case---a symbol of type (member :upcase :downcase :capitalize).
+
+circle---a generalized boolean.
+
+escape---a generalized boolean.
+
+gensym---a generalized boolean.
+
+length---a non-negative integer, or nil.
+
+level---a non-negative integer, or nil.
+
+lines---a non-negative integer, or nil.
+
+miser-width---a non-negative integer, or nil.
+
+pprint-dispatch---a pprint dispatch table.
+
+pretty---a generalized boolean.
+
+radix---a generalized boolean.
+
+readably---a generalized boolean.
+
+right-margin---a non-negative integer, or nil.
+
+stream--an output stream designator.  The default is standard output.
 
 Description::
 .............
@@ -1100,7 +1128,7 @@ File: gcl.info,  Node: write-to-string,  Next: *print-array*,  Prev: write,  Up:
 write-to-string, prin1-to-string, princ-to-string                [Function]
 ---------------------------------------------------------------------------
 
-`write-to-string'  object &key \writekeys
+`write-to-string'  object &key array base case circle escape gensym length level lines miser-width pprint-dispatch pretty radix readably right-margin
 =>  string
 
 `prin'  1 =>  -to-string object string
@@ -1112,7 +1140,35 @@ Arguments and Values::
 
 object--an object.
 
-\writekeydescriptions
+array---a generalized boolean.
+
+base---a radix.
+
+case---a symbol of type (member :upcase :downcase :capitalize).
+
+circle---a generalized boolean.
+
+escape---a generalized boolean.
+
+gensym---a generalized boolean.
+
+length---a non-negative integer, or nil.
+
+level---a non-negative integer, or nil.
+
+lines---a non-negative integer, or nil.
+
+miser-width---a non-negative integer, or nil.
+
+pprint-dispatch---a pprint dispatch table.
+
+pretty---a generalized boolean.
+
+radix---a generalized boolean.
+
+readably---a generalized boolean.
+
+right-margin---a non-negative integer, or nil.
 
 string--a string.
 

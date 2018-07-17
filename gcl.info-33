@@ -1038,17 +1038,17 @@ Description::
 
 The value of each of the constants short-float-epsilon,
 single-float-epsilon, double-float-epsilon, and long-float-epsilon is the
-smallest positive float \epsilon of the given format, such that the
+smallest positive float ε of the given format, such that the
 following expression is true when evaluated:
 
-(not (= (float 1 \epsilon) (+ (float 1 \epsilon) \epsilon)))\/
+(not (= (float 1 ε) (+ (float 1 ε) ε)))
 
 The value of each of the constants short-float-negative-epsilon,
 single-float-negative-epsilon, double-float-negative-epsilon, and
-long-float-negative-epsilon is the smallest positive float \epsilon of the
+long-float-negative-epsilon is the smallest positive float ε of the
 given format, such that the following expression is true when evaluated:
 
-(not (= (float 1 \epsilon) (- (float 1 \epsilon) \epsilon)))\/
+(not (= (float 1 ε) (- (float 1 ε) ε)))
 
 
 File: gcl.info,  Node: arithmetic-error,  Next: arithmetic-error-operands,  Prev: short-float-epsilon,  Up: Numbers Dictionary

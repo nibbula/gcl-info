@@ -317,8 +317,8 @@ or not minus zero is supported by the implementation:
 Therefore the range of the one-argument logarithm function is that strip
 of the complex plane containing numbers with imaginary parts between
 
--\pi (exclusive) and~\pi (inclusive) if minus zero is not supported, or
--\pi (inclusive) and~\pi (inclusive) if minus zero is supported.
+-π (exclusive) and π (inclusive) if minus zero is not supported, or
+-π (inclusive) and π (inclusive) if minus zero is supported.
 
 The two-argument logarithm function is defined as
 
@@ -861,7 +861,7 @@ number--a complex.
 Description::
 .............
 
-cis returns the value of~e^i\cdot radians, which is a complex in which the
+cis returns the value of e^i*radians, which is a complex in which the
 real part is equal to the cosine of radians, and the imaginary part is
 equal to the sine of radians.
 
@@ -1033,18 +1033,11 @@ Description::
 phase returns the phase of number (the angle part of its polar
 representation) in radians, in the range
 
--\pi (exclusive) if minus zero is not supported, or -\pi (inclusive) if
+-π (exclusive) if minus zero is not supported, or -π (inclusive) if
 minus zero is supported,
 
-to \pi (inclusive).  The phase of a positive
-
-real
-
-number is zero; that of a negative
-
-real
-
-number is \pi.  The phase of zero is defined to be zero.
+to π (inclusive).  The phase of a positive real number is zero; that of a
+negative real number is π.  The phase of zero is defined to be zero.
 
 If number is a complex float, the result is a float of the same type as
 the components of number.  If number is a float, the result is a float of
@@ -1053,7 +1046,7 @@ is a single float.
 
 The branch cut for phase lies along the negative real axis, continuous
 with quadrant II.  The range consists of that portion of the real axis
-between -\pi (exclusive) and~\pi (inclusive).
+between -π (exclusive) and π (inclusive).
 
 The mathematical definition of phase is as follows:
 
@@ -1383,8 +1376,8 @@ ash shifts integer arithmetically left by count bit positions if count is
 positive, or right count bit positions if count is negative.  The shifted
 value of the same sign as integer is returned.
 
-Mathematically speaking, ash performs the computation floor(integer\cdot
-2^count).  Logically, ash moves all of the bits in integer to the left,
+Mathematically speaking, ash performs the computation floor(integer * 2^count).
+Logically, ash moves all of the bits in integer to the left,
 adding zero-bits at the right, or moves them to the right, discarding bits.
 
 ash is defined to behave as if integer were represented in two's

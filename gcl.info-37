@@ -107,12 +107,9 @@ Description::
 .............
 
 An array contains objects arranged according to a Cartesian coordinate
-system.  An array provides mappings from a set of
-
-fixnums
-
-\left{i_0,i_1,\dots,i_{r-1}\right} to corresponding elements of the array,
-where 0 \le i_j < d_j, r is the rank of the array, and d_j is the size of
+system.  An array provides mappings from a set of fixnums
+{i₀, i₁, ... , i₍r₋₁₎} to corresponding elements of the array,
+where 0 ≤ i_j < d_j, r is the rank of the array, and d_j is the size of
 dimension j of the array.
 
 When an array is created, the program requesting its creation may declare

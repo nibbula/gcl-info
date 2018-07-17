@@ -741,17 +741,16 @@ Processing of top level forms in the file compiler is defined as follows:
      If the form is an eval-when form, it is handled according to Figure
      3-7.
 
-     plus .5 fil \offinterlineskip
        CT   LT   E    Mode  Action    New Mode          
-       _________________________________________________
-       Yes  Yes  --  --   Process   compile-time-too  
-       No   Yes  Yes   CTT  Process   compile-time-too  
-       No   Yes  Yes   NCT  Process   not-compile-time  
-       No   Yes  No   --   Process   not-compile-time  
-       Yes  No   --  --   Evaluate  --               
-       No   No   Yes   CTT  Evaluate  --               
-       No   No   Yes   NCT  Discard   --               
-       No   No   No   --   Discard   --               
+       ____ ___  ____ _____ _________ __________________
+       Yes  Yes  --   --    Process   compile-time-too  
+       No   Yes  Yes  CTT   Process   compile-time-too  
+       No   Yes  Yes  NCT   Process   not-compile-time  
+       No   Yes  No   --    Process   not-compile-time  
+       Yes  No   --   --    Evaluate  --               
+       No   No   Yes  CTT   Evaluate  --               
+       No   No   Yes  NCT   Discard   --               
+       No   No   No   --    Discard   --               
 
        Figure 3-7: EVAL-WHEN processing
 

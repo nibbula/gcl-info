@@ -910,8 +910,7 @@ original list is returned.
 
 The test, test-not, and key affect how it is determined whether item is
 the same as an element of list.  For details, see *Note Satisfying a
-Two-Argument Test::.\ifvmode\else\endgraf \ifdim \prevdepth>-1000pt
-\NIS\parskip \normalparskip\relax\fi
+Two-Argument Test::.
 
 Examples::
 ..........

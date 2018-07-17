@@ -46,8 +46,8 @@ For the four defined subtypes of type float, it is true that intermediate
 between the type short-float and the type long-float are the type
 single-float and the type double-float.  The precise definition of these
 categories is implementation-defined.  The precision (measured in "bits",
-computed as p\log_2b) and the exponent size (also measured in "bits,"
-computed as \log_2(n+1), where n is the maximum exponent value) is
+computed as p log₂ b) and the exponent size (also measured in "bits,"
+computed as log₂(n+1), where n is the maximum exponent value) is
 recommended to be at least as great as the values in Figure 12-11.  Each
 of the defined subtypes of type float might or might not have a minus zero.
 
@@ -685,7 +685,7 @@ zerop                                                            [Function]
 Pronunciation::
 ...............
 
-pronounced 'z\=e (, )r\=o(, )p\=e
+pronounced 'zē (, )rō(, )pē
 
 Arguments and Values::
 ......................
@@ -768,7 +768,7 @@ Description::
 These functions divide number by divisor, returning a quotient and
 remainder, such that
 
-quotient\cdot divisor+remainder=number
+quotient * divisor + remainder = number
 
 The quotient always represents a mathematical integer.  When more than one
 mathematical integer might be possible (i.e., when the remainder is not
@@ -797,7 +797,7 @@ round, fround
      round and fround produce a quotient that has been rounded to the
      nearest mathematical integer; if the mathematical quotient is exactly
      halfway between two integers, (that is, it has the form
-     integer+1\over2), then the quotient has been rounded to the even
+     integer+1/2), then the quotient has been rounded to the even
      (divisible by two) integer.
 
 All of these functions perform type conversion operations on numbers.
@@ -940,9 +940,9 @@ functions can be defined mathematically for number or number1 specified as
 x as in Figure 12-13.
 
   Function     Definition                            
-  Arc sine      -i log  (ix+ \sqrt1-x^2 )          
-  Arc cosine    (\pi/2) - arcsin  x                  
-  Arc tangent   -i log  ((1+ix) \sqrt1/(1+x^2) )   
+  Arc sine      -i log  (ix+ sqrt(1-x^2) )          
+  Arc cosine    (π/2) - arcsin  x                  
+  Arc tangent   -i log  ((1+ix) sqrt(1/(1+x^2)) )   
 
   Figure 12-13: Mathematical definition of arc sine, arc cosine, and arc tangent
 
@@ -952,11 +952,11 @@ computation. They are not necessarily the simplest ones for real-valued
 computations.
 
 If both number1 and number2 are supplied for atan, the result is the arc
-tangent of number1/number2.  The value of atan is always between -\pi
-(exclusive) and~\pi (inclusive)
+tangent of number1/number2.  The value of atan is always between -π
+(exclusive) and π (inclusive)
 
 when minus zero is not supported.  The range of the two-argument arc
-tangent when minus zero is supported includes -\pi.
+tangent when minus zero is supported includes -π.
 
 For a
 
@@ -966,7 +966,7 @@ number1, the result is
 
 a real
 
-and lies between -\pi/2 and~\pi/2 (both exclusive).  number1 can be a
+and lies between -π/2 and π/2 (both exclusive).  number1 can be a
 complex if number2 is not supplied. If both are supplied, number2 can be
 zero provided number1 is not zero.
 
@@ -979,18 +979,18 @@ The following definition for arc sine determines the range and branch cuts:
                  arcsin  z = -i log  (iz+\sqrt1-z^2\Bigr)
 
 The branch cut for the arc sine function is in two pieces: one along the
-negative real axis to the left of~-1 (inclusive), continuous with quadrant
-II, and one along the positive real axis to the right of~1 (inclusive),
+negative real axis to the left of -1 (inclusive), continuous with quadrant
+II, and one along the positive real axis to the right of 1 (inclusive),
 continuous with quadrant IV.  The range is that strip of the complex plane
-containing numbers whose real part is between -\pi/2 and~\pi/2.  A number
-with real part equal to -\pi/2 is in the range if and only if its imaginary
-part is non-negative; a number with real part equal to \pi/2 is in the
+containing numbers whose real part is between -π/2 and π/2.  A number
+with real part equal to -π/2 is in the range if and only if its imaginary
+part is non-negative; a number with real part equal to π/2 is in the
 range if and only if its imaginary part is non-positive.
 
 The following definition for arc cosine determines the range and branch
 cuts:
 
-                     arccos  z = \pi\over2- arcsin  z
+                     arccos  z = π/2- arcsin  z
 
 or, which are equivalent,
 
@@ -999,33 +999,33 @@ or, which are equivalent,
          arccos  z = 2 log  (\sqrt(1+z)/2 + i \sqrt(1-z)/2)\overi
 
 The branch cut for the arc cosine function is in two pieces: one along the
-negative real axis to the left of~-1 (inclusive), continuous with quadrant
-II, and one along the positive real axis to the right of~1 (inclusive),
+negative real axis to the left of -1 (inclusive), continuous with quadrant
+II, and one along the positive real axis to the right of 1 (inclusive),
 continuous with quadrant IV.  This is the same branch cut as for arc sine.
 The range is that strip of the complex plane containing numbers whose real
-part is between 0 and~\pi.  A number with real part equal to 0 is in the
+part is between 0 and π.  A number with real part equal to 0 is in the
 range if and only if its imaginary part is non-negative; a number with
-real part equal to \pi is in the range if and only if its imaginary part
+real part equal to π is in the range if and only if its imaginary part
 is non-positive.
 
 The following definition for (one-argument) arc tangent determines the
 range and branch cuts:
 
-               arctan  z = log  (1+iz) - log  (1-iz)\over2i
+               arctan  z = log  (1+iz) - log  (1-iz)/2i
 
 Beware of simplifying this formula; "obvious" simplifications are likely
 to alter the branch cuts or the values on the branch cuts incorrectly.
 The branch cut for the arc tangent function is in two pieces: one along
 the positive imaginary axis above i (exclusive), continuous with quadrant
 II, and one along the negative imaginary axis below -i (exclusive),
-continuous with quadrant IV.  The points i and~-i are excluded from the
+continuous with quadrant IV.  The points i and -i are excluded from the
 domain.  The range is that strip of the complex plane containing numbers
-whose real part is between -\pi/2 and~\pi/2.  A number with real part
-equal to -\pi/2 is in the range if and only if its imaginary part is
-strictly positive; a number with real part equal to \pi/2 is in the range
+whose real part is between -π/2 and π/2.  A number with real part
+equal to -π/2 is in the range if and only if its imaginary part is
+strictly positive; a number with real part equal to π/2 is in the range
 if and only if its imaginary part is strictly negative.  Thus the range of
-arc tangent is identical to that of arc sine with the points -\pi/2
-and~\pi/2 excluded.
+arc tangent is identical to that of arc sine with the points -π/2
+and π/2 excluded.
 
 For atan, the signs of number1 (indicated as x) and number2 (indicated as
 y) are used to derive quadrant information. Figure 12-14 details various
@@ -1038,20 +1038,20 @@ implementations that support minus zero.
    to 1pc y = 0        x > 0       Positive x-axis   0                       
    to 1pc* y = +0      x > 0       Positive x-axis  +0                       
    to 1pc* y = -0      x > 0       Positive x-axis  -0                       
-   to 1pc y > 0        x > 0       Quadrant I       0 < result < \pi/2      
-   to 1pc y > 0        x = 0       Positive y-axis  \pi/2                    
-   to 1pc y > 0        x < 0       Quadrant II      \pi/2 < result < \pi    
-   to 1pc y = 0        x < 0       Negative x-axis   \pi                     
-   to 1pc* y = +0      x < 0       Negative x-axis  +\pi                     
-   to 1pc* y = -0      x < 0       Negative x-axis  -\pi                     
-   to 1pc y < 0        x < 0       Quadrant III     -\pi < result < -\pi/2  
-   to 1pc y < 0        x = 0       Negative y-axis  -\pi/2                   
-   to 1pc y < 0        x > 0       Quadrant IV      -\pi/2 < result < 0     
+   to 1pc y > 0        x > 0       Quadrant I       0 < result < π/2      
+   to 1pc y > 0        x = 0       Positive y-axis  π/2                    
+   to 1pc y > 0        x < 0       Quadrant II      π/2 < result < π    
+   to 1pc y = 0        x < 0       Negative x-axis   π                     
+   to 1pc* y = +0      x < 0       Negative x-axis  +π                     
+   to 1pc* y = -0      x < 0       Negative x-axis  -π                     
+   to 1pc y < 0        x < 0       Quadrant III     -π < result < -π/2  
+   to 1pc y < 0        x = 0       Negative y-axis  -π/2                   
+   to 1pc y < 0        x > 0       Quadrant IV      -π/2 < result < 0     
    to 1pc y = 0        x = 0       Origin           undefined consequences   
    to 1pc* y = +0      x = +0      Origin           +0                       
    to 1pc* y = -0      x = +0      Origin           -0                       
-   to 1pc* y = +0      x = -0      Origin           +\pi                     
-   to 1pc* y = -0      x = -0      Origin           -\pi                     
+   to 1pc* y = +0      x = -0      Origin           +π                     
+   to 1pc* y = -0      x = -0      Origin           -π                     
 
                Figure 12-14: Quadrant information for arc tangent             
 
@@ -1099,7 +1099,7 @@ an implementation-dependent long float.
 Description::
 .............
 
-The best long float approximation to the mathematical constant \pi.
+The best long float approximation to the mathematical constant π.
 
 Examples::
 ..........
@@ -1119,7 +1119,7 @@ Examples::
 Notes::
 .......
 
-An approximation to \pi in some other precision can be obtained by writing
+An approximation to π in some other precision can be obtained by writing
 (float pi x), where x is a float of the desired precision, or by writing
 (coerce pi type), where type is the desired type, such as short-float.
 
@@ -1176,9 +1176,9 @@ real axis to the left of~1 (inclusive), extending indefinitely along the
 negative real axis, continuous with quadrant II and (between 0 and~1) with
 quadrant I.  The range is that half-strip of the complex plane containing
 numbers whose real part is non-negative and whose imaginary part is
-between -\pi (exclusive) and~\pi (inclusive).  A number with real part
+between -π (exclusive) and π (inclusive).  A number with real part
 zero is in the range if its imaginary part is between zero (inclusive)
-and~\pi (inclusive).
+and π (inclusive).
 
 The following definition for the inverse hyperbolic sine determines the
 range and branch cuts:
@@ -1189,16 +1189,16 @@ The branch cut for the inverse hyperbolic sine function is in two pieces:
 one along the positive imaginary axis above i (inclusive), continuous with
 quadrant I, and one along the negative imaginary axis below -i
 (inclusive), continuous with quadrant III.  The range is that strip of the
-complex plane containing numbers whose imaginary part is between -\pi/2
-and~\pi/2.  A number with imaginary part equal to -\pi/2 is in the range
+complex plane containing numbers whose imaginary part is between -π/2
+and π/2.  A number with imaginary part equal to -π/2 is in the range
 if and only if its real part is non-positive; a number with imaginary part
-equal to \pi/2 is in the range if and only if its imaginary part is
+equal to π/2 is in the range if and only if its imaginary part is
 non-negative.
 
 The following definition for the inverse hyperbolic tangent determines the
 range and branch cuts:
 
-               arctanh  z = log  (1+z) - log  (1-z)\over2.
+               arctanh  z = log  (1+z) - log  (1-z)/2.
 
 Note that:
 
@@ -1209,13 +1209,13 @@ pieces: one along the negative real axis to the left of -1 (inclusive),
 continuous with quadrant III, and one along the positive real axis to the
 right of~1 (inclusive), continuous with quadrant I.  The points -1 and~1
 are excluded from the domain.  The range is that strip of the complex
-plane containing numbers whose imaginary part is between -\pi/2 and \pi/2.
-A number with imaginary part equal to -\pi/2 is in the range if and only
+plane containing numbers whose imaginary part is between -π/2 and π/2.
+A number with imaginary part equal to -π/2 is in the range if and only
 if its real part is strictly negative; a number with imaginary part equal
-to \pi/2 is in the range if and only if its imaginary part is strictly
+to π/2 is in the range if and only if its imaginary part is strictly
 positive.  Thus the range of the inverse hyperbolic tangent function is
 identical to that of the inverse hyperbolic sine function with the points
--\pi i/2 and~\pi i/2 excluded.
+-π i/2 and π i/2 excluded.
 
 Examples::
 ..........

@@ -757,7 +757,7 @@ The while construct allows iteration to continue until the supplied form
 evaluates to false.  The supplied form is reevaluated at the location of
 the while clause.
 
-The until construct is equivalent to while (not form)\dots.  If the value
+The until construct is equivalent to while (not form) ... .  If the value
 of the supplied form is non-nil, iteration terminates.
 
 Termination-test control constructs can be used anywhere within the loop

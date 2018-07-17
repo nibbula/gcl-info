@@ -930,7 +930,7 @@ as if the results were mathematically accurate.  Two mathematically
 identical expressions may be computationally different because of errors
 inherent in the floating-point approximation process.  The precision of a
 float is not necessarily correlated with the accuracy of that number.  For
-instance, 3.142857142857142857 is a more precise approximation to \pi than
+instance, 3.142857142857142857 is a more precise approximation to π than
 3.14159, but the latter is more accurate.  The precision refers to the
 number of bits retained in the representation.  When an operation combines
 a short float with a long float, the result will be a long float.  Common
@@ -990,14 +990,7 @@ File: gcl.info,  Node: Rule of Complex Contagion,  Next: Rule of Canonical Repre
 Rule of Complex Contagion
 .........................
 
-When a
-
-real
-
-and a complex are both part of a computation, the
-
-real
-
+When a real and a complex are both part of a computation, the real
 is first converted to a complex by providing an imaginary part of 0.
 
 
@@ -1396,15 +1389,15 @@ Description::
 .............
 
 A float is a mathematical rational (but not a Common Lisp rational) of the
-form s\cdot f\cdot b^e-p, where s is +1 or -1, the sign; b is an integer
-greater than~1, the base or radix of the representation; p is a positive
+form s · f · b^e-p, where s is +1 or -1, the sign; b is an integer
+greater than 1, the base or radix of the representation; p is a positive
 integer, the precision (in base-b digits) of the float; f is a positive
 integer between b^p-1 and b^p-1 (inclusive), the significand; and e is an
-integer, the exponent.  The value of p and the range of~e depends on the
+integer, the exponent.  The value of p and the range of e depends on the
 implementation and on the type of float within that implementation. In
 addition, there is a floating-point zero; depending on the implementation,
 there can also be a "minus zero". If there is no minus zero, then 0.0
-and~-0.0 are both interpreted as simply a floating-point zero.  (= 0.0
+and -0.0 are both interpreted as simply a floating-point zero.  (= 0.0
 -0.0) is always true.  If there is a minus zero, (eql -0.0 0.0) is false,
 otherwise it is true.
 

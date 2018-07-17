@@ -1177,7 +1177,7 @@ If destructuring is used to declare or initialize a number of groups of
 variables into types, the loop keyword and can be used to simplify the
 process further.
 
-     ;; Initialize and declare variables in parallel by using the AND construct.\kern-7pt
+     ;; Initialize and declare variables in parallel by using the AND construct.
       (loop with (a b) of-type float = '(1.0 2.0)
             and (c d) of-type integer = '(3 4)
             and (e f)

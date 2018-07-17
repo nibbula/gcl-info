@@ -114,13 +114,13 @@ notation as appropriate.
 
 The full form is ~w,d,e,k,overflowchar,padchar,exponentcharG.  The format
 in which to print arg depends on the magnitude (absolute value) of the
-arg.  Let n be an integer such that 10^n-1 \le |arg| < 10^n.  Let ee equal
+arg.  Let n be an integer such that 10^n-1 ≤ |arg| < 10^n.  Let ee equal
 e+2, or 4 if e is omitted.  Let ww equal w- ee, or nil if w is omitted.
 If d is omitted, first let q be the number of digits needed to print arg
 with no loss of information and without leading or trailing zeros; then
 let d equal (max q (min n 7)).  Let dd equal d- n.
 
-If 0 \le dd \le d, then arg is printed as if by the format directives
+If 0 ≤ dd ≤ d, then arg is printed as if by the format directives
 
 ~ww,dd,,overflowchar,padcharF~ee@T
 

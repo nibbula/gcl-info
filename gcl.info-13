@@ -246,7 +246,7 @@ will be expanded if it contains references to another derived type
 specifier.
 
 The newly defined type specifier may be referenced as a list of the form
-(name arg_1 arg_2 ...)\/.  The number of arguments must be appropriate to
+(name arg_1 arg_2 ...).  The number of arguments must be appropriate to
 the lambda-list.  If the new type specifier takes no arguments, or if all
 of its arguments are optional, the type specifier may be used as an atomic
 type specifier.
@@ -1311,7 +1311,7 @@ is also a place form.
 
 A form such as
 
-(setf (values place-1 \dots place-n) values-form)
+(setf (values place-1 ... place-n) values-form)
 
 does the following:
 
