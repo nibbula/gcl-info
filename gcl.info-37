@@ -85,10 +85,10 @@ Arrays Dictionary
 * svref::
 * vector::
 * vector-pop::
-* vector-push::
+* vector-push, vector-push-extend: vector-push.
 * vectorp::
 * bit::
-* bit-and::
+* bit-and, bit-andc1, bit-andc2, bit-eqv, bit-ior, bit-nand, bit-nor, bit-not, bit-orc1, bit-orc2, bit-xor: bit-and.
 * bit-vector-p::
 * simple-bit-vector-p::
 

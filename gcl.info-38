@@ -641,11 +641,11 @@ Strings Dictionary
 * simple-string::
 * simple-base-string::
 * simple-string-p::
-* char::
+* char, schar: char.
 * string::
-* string-upcase::
-* string-trim::
-* string=::
+* string-upcase, string-downcase, string-capitalize, nstring-upcase, nstring-downcase, nstring-capitalize: string-upcase.
+* string-trim, string-left-trim, string-right-trim: string-trim.
+* string=, string/=, string<, string>, string<=, string>=, string-equal, string-not-equal, string-lessp, string-greaterp, string-not-greaterp, string-not-lessp: string=.
 * stringp::
 * make-string::
 
