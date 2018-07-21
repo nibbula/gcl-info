@@ -1615,20 +1615,20 @@ Sequences Dictionary
 * map::
 * map-into::
 * reduce::
-* count::
+* count, count-if, count-if-not: count.
 * length::
-* reverse::
-* sort::
-* find::
-* position::
+* reverse, nreverse: reverse.
+* sort, stable-sort: sort.
+* find, find-if, find-if-not: find.
+* position, position-if, position-if-not: position.
 * search::
 * mismatch::
 * replace::
-* substitute::
+* substitute, substitute-if, substitute-if-not, nsubstitute, nsubstitute-if, nsubstitute-if-not: substitute.
 * concatenate::
 * merge::
-* remove::
-* remove-duplicates::
+* remove, remove-if, remove-if-not, delete, delete-if, delete-if-not: remove.
+* remove-duplicates, delete-duplicates: remove-duplicates.
 
 
 File: gcl.info,  Node: sequence,  Next: copy-seq,  Prev: Sequences Dictionary,  Up: Sequences Dictionary
