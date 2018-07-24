@@ -901,7 +901,7 @@ Streams Dictionary
 * string-stream::
 * synonym-stream::
 * two-way-stream::
-* input-stream-p::
+* input-stream-p, output-stream-p: input-stream-p.
 * interactive-stream-p::
 * open-stream-p::
 * stream-element-type::
@@ -911,11 +911,11 @@ Streams Dictionary
 * peek-char::
 * read-char::
 * read-char-no-hang::
-* terpri::
+* terpri, fresh-line: terpri.
 * unread-char::
 * write-char::
 * read-line::
-* write-string::
+* write-string, write-line: write-string.
 * read-sequence::
 * write-sequence::
 * file-length::
@@ -928,15 +928,15 @@ Streams Dictionary
 * with-open-stream::
 * listen::
 * clear-input::
-* finish-output::
-* y-or-n-p::
+* finish-output, force-output, clear-output: finish-output.
+* y-or-n-p, yes-or-no-p: y-or-n-p.
 * make-synonym-stream::
 * synonym-stream-symbol::
 * broadcast-stream-streams::
 * make-broadcast-stream::
 * make-two-way-stream::
-* two-way-stream-input-stream::
-* echo-stream-input-stream::
+* two-way-stream-input-stream, two-way-stream-output-stream: two-way-stream-input-stream.
+* echo-stream-input-stream, echo-stream-output-stream: echo-stream-input-stream.
 * make-echo-stream::
 * concatenated-stream-streams::
 * make-concatenated-stream::
@@ -945,7 +945,7 @@ Streams Dictionary
 * make-string-output-stream::
 * with-input-from-string::
 * with-output-to-string::
-* *debug-io*::
+* *debug-io*, *error-output*, *query-io*, *standard-input*, *standard-output*, *trace-output*: *debug-io*.
 * *terminal-io*::
 * stream-error::
 * stream-error-stream::
