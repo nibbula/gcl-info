@@ -38,6 +38,6 @@ A. 1. Dump into `~/info` or something.
    5. ...??
    6. Profit??
 
-♥ to [William F. Schelter](https://www.gnu.org/software/gcl/)
+♥ to [William F. Schelter](https://www.gnu.org/software/gcl/) and everyone who made this.
 
 🖕 to international standards bodies.
