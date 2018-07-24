@@ -5,6 +5,7 @@ w/minor fixes, split out from GCL for your (or mostly my) convenience.
 Q. Shouldn't you have... ?
 
 A. Yes I should have.
+   <sup><sup><sup>I'll gladly do it differently when a new specification arrives.</sup></sup></sup>
 
 Q. How to use?
 
