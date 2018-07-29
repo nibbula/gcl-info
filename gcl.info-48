@@ -699,9 +699,7 @@ Specifies tabbing to stream as performed by the standard ~T format
 directive.
 
 If stream is a pretty printing stream and the value of *print-pretty* is
-true,
-
-tabbing is performed; otherwise, pprint-tab has no effect.
+true, tabbing is performed; otherwise, pprint-tab has no effect.
 
 The arguments colnum and colinc correspond to the two parameters to ~T and
 are in terms of ems.  The kind argument specifies the style of tabbing.
@@ -1074,9 +1072,7 @@ prin1 produces output suitable for input to read.  It binds *print-escape*
 to true.
 
 princ is just like prin1 except that the output has no escape characters.
-It binds *print-escape*   to false
-
-and *print-readably* to false.
+It binds *print-escape* to false and *print-readably* to false.
 
 The general rule is that output from princ is intended to look good to
 people, while output from prin1 is intended to be acceptable to read.
