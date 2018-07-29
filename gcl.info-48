@@ -982,8 +982,9 @@ write, prin1, print, pprint, princ                               [Function]
 `write'  object &key array base case circle escape gensym length level lines miser-width pprint-dispatch pretty radix readably right-margin stream
 =>  object
 
-`prin'  1 =>  object &optional output-stream object `princ'  object
-&optional output-stream =>  object
+`prin1'  object &optional output-stream =>  object
+
+`princ'  object &optional output-stream =>  object
 
 `print'  object &optional output-stream =>  object
 
@@ -1131,7 +1132,7 @@ write-to-string, prin1-to-string, princ-to-string                [Function]
 `write-to-string'  object &key array base case circle escape gensym length level lines miser-width pprint-dispatch pretty radix readably right-margin
 =>  string
 
-`prin'  1 =>  -to-string object string
+`prin1-to-string'  object => string
 
 `princ-to-string'  object =>  string
 
