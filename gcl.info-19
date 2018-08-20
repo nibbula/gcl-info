@@ -1006,15 +1006,13 @@ The following is an example of the above rules:
       (defclass r (q) ((x :initarg b))
         (:default-initargs a 1 b 2))
 
-                                     
-
-                                 Defaulted                                     
-      Form                         Initialization Argument List Contents of Slot X 
-      _____________________________________________________________________________
-      (make-instance 'r)           (a 1 b 2)                    1                  
-      (make-instance 'r 'a 3)      (a 3 b 2)                    3                  
-      (make-instance 'r 'b 4)      (b 4 a 1)                    4                  
-      (make-instance 'r 'a 1 'a 2) (a 1 a 2 b 2)                1                  
+                              Defaulted                                     
+ Form                         Initialization Argument List Contents of Slot X
+ ____________________________ ____________________________ ___________________
+ (make-instance 'r)           (a 1 b 2)                    1                  
+ (make-instance 'r 'a 3)      (a 3 b 2)                    3                  
+ (make-instance 'r 'b 4)      (b 4 a 1)                    4                  
+ (make-instance 'r 'a 1 'a 2) (a 1 a 2 b 2)                1                  
 
 
 
