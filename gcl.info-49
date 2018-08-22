@@ -271,11 +271,8 @@ Description::
 
 Controls whether the Lisp printer calls the pretty printer.
 
-If it is false, the pretty printer is not used and
-
-a minimum
-
-of whitespace_1 is output when printing an expression.
+If it is false, the pretty printer is not used and a minimum of whitespace
+is output when printing an expression.
 
 If it is true, the pretty printer is used, and the Lisp printer will
 endeavor to insert extra whitespace_1 where appropriate to make expressions
