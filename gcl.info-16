@@ -878,7 +878,7 @@ File: gcl.info,  Node: multiple-value-prog1,  Next: multiple-value-setq,  Prev: 
 multiple-value-prog1                                     [Special Operator]
 ---------------------------------------------------------------------------
 
-`multiple-value-prog'  1 =>  first-form {form}*
+multiple-value-prog1 =>  first-form {form}*
 
 first-form-results
 
@@ -1299,8 +1299,8 @@ File: gcl.info,  Node: prog1,  Next: progn,  Prev: prog,  Up: Data and Control F
 prog1, prog2                                                        [Macro]
 ---------------------------------------------------------------------------
 
-`prog'  1 =>  first-form             {form}* result-1 `prog'  2 =>
-first-form second-form {form}* result-2
+prog1 first-form             {form}* => result-1
+prog2 first-form second-form {form}* => result-2
 
 Arguments and Values::
 ......................
