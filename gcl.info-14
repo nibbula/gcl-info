@@ -213,7 +213,7 @@ Data and Control Flow Dictionary
 * multiple-values-limit::
 * nth-value::
 * prog, prog*: prog.
-* prog1::
+* prog1, prog2: prog1.
 * progn::
 * define-modify-macro::
 * defsetf::
