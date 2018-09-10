@@ -1129,7 +1129,7 @@ Printer Dictionary
 * print-object::
 * print-unreadable-object::
 * set-pprint-dispatch::
-* write, print1, print, pprint, princ: write.
+* write, prin1, print, pprint, princ: write.
 * write-to-string, prin1-to-string, princ-to-string: write-to-string.
 * *print-array*::
 * *print-base*, *print-radix*: *print-base*.
