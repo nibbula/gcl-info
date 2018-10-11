@@ -1035,25 +1035,17 @@ Control Transfer Clauses
 ........................
 
 The named construct establishes a name for an implicit block surrounding
-the
-
-entire
-
-loop so that the return-from special operator can be used to return values
-from or to exit loop.  Only one name per loop form can be assigned.  If
-used, the named construct must be the first clause in the loop expression.
+the entire loop so that the return-from special operator can be used to
+return values from or to exit loop.  Only one name per loop form can be
+assigned.  If used, the named construct must be the first clause in the
+loop expression.
 
 The return construct takes one form.  Any values returned by the form are
 immediately returned by the loop form.
 
 This construct is similar to the return-from special operator and the
-return macro.  The return construct
-
-does not execute any finally clause that
-
-the loop form
-
-is given.
+return macro.  The return construct does not execute any finally clause
+that the loop form is given.
 
 
 File: gcl.info,  Node: Examples of NAMED clause,  Next: Initial and Final Execution,  Prev: Control Transfer Clauses,  Up: Miscellaneous Clauses
@@ -1096,15 +1088,13 @@ Clauses such as return, always, never, and thereis can bypass the finally
 clause.
 
 return (or return-from, if the named option was supplied)
-
 can be used after finally to return values from a loop.
 
-Such an explicit return
-
-inside the finally clause takes precedence over returning the accumulation
-from clauses supplied by such keywords as collect, nconc, append, sum,
-count, maximize, and minimize; the accumulation values for these preempted
-clauses are not returned by loop if return or return-from is used.
+Such an explicit return inside the finally clause takes precedence over
+returning the accumulation from clauses supplied by such keywords as collect,
+nconc, append, sum, count, maximize, and minimize; the accumulation values
+for these preempted clauses are not returned by loop if return or
+return-from is used.
 
 
 File: gcl.info,  Node: Examples of Miscellaneous Loop Features,  Next: Notes about Loop,  Prev: Miscellaneous Clauses,  Up: The LOOP Facility

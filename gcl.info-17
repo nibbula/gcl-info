@@ -60,10 +60,7 @@ that is given all the arguments to access-fn and also, as its last
 argument, the new value (which must be returned by update-fn as its value).
 
 The long form defsetf resembles defmacro.  The lambda-list describes the
-arguments of access-fn.  The store-variables describe the value
-
-or values
-
+arguments of access-fn.  The store-variables describe the value or values
 to be stored into the place.  The body must compute the expansion of a
 setf of a call on access-fn.
 
@@ -171,12 +168,9 @@ Notes::
 .......
 
 forms must include provision for returning the correct value (the value
-
-or values
-
-of store-variable).  This is handled by forms rather than by defsetf
-because in many cases this value can be returned at no extra cost, by
-calling a function that simultaneously stores into the place and returns
+or values of store-variable).  This is handled by forms rather than by
+defsetf because in many cases this value can be returned at no extra cost,
+by calling a function that simultaneously stores into the place and returns
 the correct value.
 
 A setf of a call on access-fn also evaluates all of access-fn's arguments;
@@ -227,12 +221,9 @@ The lambda-list supports destructuring.  See *Note Macro Lambda Lists::.
 Documentation is attached to access-fn as a documentation string of kind
 setf.
 
-Forms constitute the body of the
-
-setf expander
-
-definition and must compute the setf expansion for a call on setf that
-references the place by means of the given access-fn.
+Forms constitute the body of the setf expander definition and must compute
+the setf expansion for a call on setf that references the place by means of
+the given access-fn.
 
 The setf expander function is defined in the same lexical environment in
 which the define-setf-expander form appears.
