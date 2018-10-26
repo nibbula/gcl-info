@@ -84,7 +84,7 @@ Characters Dictionary
 * base-char::
 * standard-char::
 * extended-char::
-* char=::
+* char=, char/=, char<, char>, char<=, char>=, char-equal, char-not-equal, char-lessp, char-greaterp, char-not-greaterp, char-not-lessp: char=.
 * character::
 * characterp::
 * alpha-char-p::
@@ -93,8 +93,8 @@ Characters Dictionary
 * digit-char-p::
 * graphic-char-p::
 * standard-char-p::
-* char-upcase::
-* upper-case-p::
+* char-upcase, char-downcase: char-upcase.
+* upper-case-p, lower-case-p, both-case-p: upper-case-p.
 * char-code::
 * char-int::
 * code-char::
@@ -178,9 +178,7 @@ be stored in a string of characters having 8-bit encodings.  In such an
 implementation, the type base-char is a proper subtype of the type
 character.
 
-The type standard-char is a
-
-subtype of type base-char.
+The type standard-char is a subtype of type base-char.
 
 
 File: gcl.info,  Node: standard-char,  Next: extended-char,  Prev: base-char,  Up: Characters Dictionary
@@ -191,11 +189,7 @@ standard-char                                                        [Type]
 Supertypes::
 ............
 
-standard-char,
-
-base-char,
-
-character, t
+standard-char, base-char, character, t
 
 Description::
 .............
@@ -243,10 +237,8 @@ char=, char/=, char<, char>, char<=, char>=,
 char-equal, char-not-equal, char-lessp, char-greaterp, char-not-greaterp,
 -------------------------------------------------------------------------
 
-char-not-lessp
+char-not-lessp                                                  [Function]
 --------------
-
-                                                                [Function]
 
 `char='  &rest characters^+ =>  generalized-boolean
 
