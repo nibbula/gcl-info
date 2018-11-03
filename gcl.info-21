@@ -51,7 +51,7 @@ Objects Dictionary
 * add-method::
 * initialize-instance::
 * class-name::
-* (setf class-name)::
+* setf class-name::
 * class-of::
 * unbound-slot::
 * unbound-slot-instance::

@@ -629,7 +629,7 @@ Node: find-method1076572
 Node: add-method1079257
 Node: initialize-instance1080536
 Node: class-name1082354
-Node: (setf class-name)1083162
+Node: setf class-name1083162
 Node: class-of1083840
 Node: unbound-slot1084945
 Node: unbound-slot-instance1085688

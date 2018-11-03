@@ -1168,7 +1168,7 @@ See Also::
 of Initialization Arguments::
 
 
-File: gcl.info,  Node: class-name,  Next: (setf class-name),  Prev: initialize-instance,  Up: Objects Dictionary
+File: gcl.info,  Node: class-name,  Next: setf class-name,  Prev: initialize-instance,  Up: Objects Dictionary
 
 class-name                                      [Standard Generic Function]
 ---------------------------------------------------------------------------
@@ -1209,7 +1209,7 @@ is the proper name of C.  For further discussion, see *Note Classes::.
 The name of an anonymous class is nil.
 
 
-File: gcl.info,  Node: (setf class-name),  Next: class-of,  Prev: class-name,  Up: Objects Dictionary
+File: gcl.info,  Node: setf class-name,  Next: class-of,  Prev: class-name,  Up: Objects Dictionary
 
 (setf class-name)                               [Standard Generic Function]
 ---------------------------------------------------------------------------
@@ -1242,7 +1242,7 @@ See Also::
 *Note find-class:: , proper name, *Note Classes::
 
 
-File: gcl.info,  Node: class-of,  Next: unbound-slot,  Prev: (setf class-name),  Up: Objects Dictionary
+File: gcl.info,  Node: class-of,  Next: unbound-slot,  Prev: setf class-name,  Up: Objects Dictionary
 
 class-of                                                         [Function]
 ---------------------------------------------------------------------------
