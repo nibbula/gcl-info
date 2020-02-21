@@ -1147,7 +1147,7 @@ Numbers Dictionary
 * signed-byte::
 * unsigned-byte::
 * mod (Type)::
-* bit::
+* bit (Type)::
 * fixnum::
 * bignum::
 * =, /=, <, >, <=, >=: =.

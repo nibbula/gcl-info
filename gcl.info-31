@@ -362,7 +362,7 @@ Notes::
 The type (unsigned-byte 1) is also called bit.
 
 
-File: gcl.info,  Node: mod (Type),  Next: bit,  Prev: unsigned-byte,  Up: Numbers Dictionary
+File: gcl.info,  Node: mod (Type),  Next: bit (Type),  Prev: unsigned-byte,  Up: Numbers Dictionary
 
 mod                                                        [Type Specifier]
 ---------------------------------------------------------------------------
@@ -393,7 +393,7 @@ The argument is required, and cannot be *.
 The symbol mod is not valid as a type specifier.
 
 
-File: gcl.info,  Node: bit,  Next: fixnum,  Prev: mod (Type),  Up: Numbers Dictionary
+File: gcl.info,  Node: bit (Type),  Next: fixnum,  Prev: mod (Type),  Up: Numbers Dictionary
 
 bit                                                                  [Type]
 ---------------------------------------------------------------------------
@@ -413,7 +413,7 @@ Description::
 The type bit is equivalent to the type (integer 0 1) and (unsigned-byte 1).
 
 
-File: gcl.info,  Node: fixnum,  Next: bignum,  Prev: bit,  Up: Numbers Dictionary
+File: gcl.info,  Node: fixnum,  Next: bignum,  Prev: bit (Type),  Up: Numbers Dictionary
 
 fixnum                                                               [Type]
 ---------------------------------------------------------------------------

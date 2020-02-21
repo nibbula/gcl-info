@@ -821,7 +821,7 @@ Node: integer1431080
 Node: signed-byte1432527
 Node: unsigned-byte1433654
 Node: mod (Type)1434853
-Node: bit1435653
+Node: bit (Type)1435653
 Node: fixnum1436092
 Node: bignum1436667
 Node: =1437075
