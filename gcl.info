@@ -706,7 +706,7 @@ Node: continue1256834
 Node: muffle-warning1258083
 Node: store-value1259788
 Node: use-value1261117
-Node: abort (function)1261841
+Node: abort [function]1261841
 Node: Symbols1268165
 Node: Symbol Concepts1268315
 Node: Symbols Dictionary1268915
@@ -1482,10 +1482,10 @@ Node: room2433466
 Node: ed2434659
 Node: inspect2436194
 Node: dribble2437185
-Node: -2439134
-Node: +2439860
-Node: *2440981
-Node: /2442575
+Node: - [variable]2439134
+Node: + [variable]2439860
+Node: * [variable]2440981
+Node: / [variable]2442575
 Node: lisp-implementation-type2443786
 Node: short-site-name2444968
 Node: machine-instance2445968

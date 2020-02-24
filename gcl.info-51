@@ -165,12 +165,12 @@ Environment Dictionary
 
 * decode-universal-time::
 * encode-universal-time::
-* get-universal-time::
+* get-universal-time, get-decoded-time: get-universal-time.
 * sleep::
-* apropos::
+* apropos, apropos-list: apropos.
 * describe::
 * describe-object::
-* trace::
+* trace, untrace: trace.
 * step::
 * time::
 * internal-time-units-per-second::
@@ -182,16 +182,16 @@ Environment Dictionary
 * ed::
 * inspect::
 * dribble::
-* -::
-* +::
-* *::
-* /::
-* lisp-implementation-type::
-* short-site-name::
+* - [variable]::
+* +, ++, +++: + [variable].
+* *, **, ***: asterisk [variable].
+* /, //, ///: / [variable].
+* lisp-implementation-type, lisp-implementation-version: lisp-implementation-type.
+* short-site-name, long-site-name: short-site-name.
 * machine-instance::
 * machine-type::
 * machine-version::
-* software-type::
+* software-type, software-versoin: software-type.
 * user-homedir-pathname::
 
 
@@ -1296,7 +1296,7 @@ Implementations are encouraged to respond to the typing of ? or a "help
 key" by providing help, including a list of commands.
 
 
-File: gcl.info,  Node: dribble,  Next: -,  Prev: inspect,  Up: Environment Dictionary
+File: gcl.info,  Node: dribble,  Next: - [variable],  Prev: inspect,  Up: Environment Dictionary
 
 dribble                                                          [Function]
 ---------------------------------------------------------------------------
@@ -1358,7 +1358,7 @@ dribble is intended primarily for interactive debugging; its effect cannot
 be relied upon when used in a program.
 
 
-File: gcl.info,  Node: -,  Next: +,  Prev: dribble,  Up: Environment Dictionary
+File: gcl.info,  Node: - [variable],  Next: + [variable],  Prev: dribble,  Up: Environment Dictionary
 
 -                                                              [Variable]
 -------------------------------------------------------------------------
@@ -1394,10 +1394,10 @@ Lisp read-eval-print loop.
 See Also::
 ..........
 
-+ (variable), * (variable), *Note /:: (variable), *Note Top level loop::
+*Note + [variable], *Note * [variable], *Note /:: [variable], *Note Top level loop::
 
 
-File: gcl.info,  Node: +,  Next: *,  Prev: -,  Up: Environment Dictionary
+File: gcl.info,  Node: + [variable],  Next: asterisk [variable],  Prev: - [variable],  Up: Environment Dictionary
 
 +, ++, +++                                                       [Variable]
 ---------------------------------------------------------------------------
@@ -1446,7 +1446,7 @@ See Also::
 loop::
 
 
-File: gcl.info,  Node: *,  Next: /,  Prev: +,  Up: Environment Dictionary
+File: gcl.info,  Node: asterisk [variable],  Next: / [variable],  Prev: + [variable],  Up: Environment Dictionary
 
 *, **, ***                                                       [Variable]
 ---------------------------------------------------------------------------
@@ -1501,7 +1501,7 @@ Lisp read-eval-print loop.
 See Also::
 ..........
 
-*Note -:: (variable), + (variable), *Note /:: (variable), *Note Top level
+*Note -:: [variable], + [variable], *Note /:: [variable], *Note Top level
 loop::
 
 Notes::
@@ -1512,7 +1512,7 @@ Notes::
       *** == (car ///)
 
 
-File: gcl.info,  Node: /,  Next: lisp-implementation-type,  Prev: *,  Up: Environment Dictionary
+File: gcl.info,  Node: / [variable],  Next: lisp-implementation-type,  Prev: asterisk [variable],  Up: Environment Dictionary
 
 /, //, ///                                                       [Variable]
 ---------------------------------------------------------------------------
@@ -1557,10 +1557,10 @@ Lisp read-eval-print loop.
 See Also::
 ..........
 
-*Note -:: (variable), + (variable), * (variable), *Note Top level loop::
+*Note -:: [variable], + [variable], * [variable], *Note Top level loop::
 
 
-File: gcl.info,  Node: lisp-implementation-type,  Next: short-site-name,  Prev: /,  Up: Environment Dictionary
+File: gcl.info,  Node: lisp-implementation-type,  Next: short-site-name,  Prev: / [variable],  Up: Environment Dictionary
 
 lisp-implementation-type,
 -------------------------

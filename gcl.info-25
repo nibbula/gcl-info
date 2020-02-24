@@ -533,7 +533,7 @@ Conditions Dictionary
 * muffle-warning::
 * store-value::
 * use-value::
-* abort (function)::
+* abort, continue, muffle-warning, store-value, use-value: abort [function].
 
 
 File: gcl.info,  Node: condition,  Next: warning,  Prev: Conditions Dictionary,  Up: Conditions Dictionary
