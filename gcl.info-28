@@ -1486,7 +1486,7 @@ Packages Dictionary
 * unuse-package::
 * use-package::
 * defpackage::
-* do-symbols::
+* do-symbols, do-external-symbols, do-all-symbols: do-symbols.
 * intern::
 * package-name::
 * package-nicknames::
