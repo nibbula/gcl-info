@@ -575,7 +575,7 @@ System Construction Dictionary
 * with-compilation-unit::
 * *features*::
 * *compile-file-pathname*::
-* *load-pathname*::
+* *load-pathname*, *load-truename*: *load-pathname*.
 * *compile-print*::
 * *load-print*::
 * *modules*::
