@@ -815,6 +815,9 @@ Node: complex (System Class)1419000
 Node: real1421316
 Node: float (System Class)1422566
 Node: short-float1425302
+Node: single-float1425302
+Node: double-float1425302
+Node: long-float1425302
 Node: rational (System Class)1429308
 Node: ratio1430406
 Node: integer1431080
