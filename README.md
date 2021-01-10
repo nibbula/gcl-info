@@ -2,11 +2,6 @@
 
 w/minor fixes, split out from GCL for your (or mostly my) convenience.
 
-Q. Shouldn't you have... ?
-
-A. Yes I should have.
-   <sup><sup><sup>I'll gladly do it differently when a new specification arrives.</sup></sup></sup>
-
 Q. How to use?
 
 A. 1. Dump into `~/info` or something.
@@ -20,7 +15,7 @@ A. 1. Dump into `~/info` or something.
 ;; If wherever you put it isn't already in your info list:
 (setq Info-directory-list (append Info-directory-list '("~/info")))
 
-;; Somthing like this was suggested on Lemonodor?
+;; Something like this was suggested on Lemonodor?
 (defvar lisp-hyperspec-lookup-history nil
   "Prompt history for lisp-hyperspec-lookup")
 (defun lisp-hyperspec-lookup (arg)
@@ -40,4 +35,4 @@ A. 1. Dump into `~/info` or something.
 
 ♥ to [William F. Schelter](https://www.gnu.org/software/gcl/) and everyone who made this.
 
-🖕 to international standards bodies.
+🖕 to certain international standards bodies.
