@@ -714,10 +714,7 @@ The constructs always, never, and thereis provide specific values to be
 returned when a loop terminates.  Using always, never, or thereis in a
 loop with value accumulation clauses that are not into causes an error of
 type program-error to be signaled (at macro expansion time).  Since
-always, never, and thereis use
-
-the return-from special operator
-
+always, never, and thereis use the return-from special operator
 to terminate iteration, any finally clause that is supplied is not
 evaluated when exit occurs due to any of these constructs.  In all other
 respects these constructs behave like the while and until constructs.
@@ -741,17 +738,12 @@ contributes a return value, the default value returned is nil.
 
 There are two differences between the thereis and until constructs:
 
-*
-     The until construct does not return a value or nil based on the value
+*    The until construct does not return a value or nil based on the value
      of the supplied form.
 
-*
-     The until construct executes any finally clause.  Since thereis uses
-
-     the return-from special operator
-
-     to terminate iteration, any finally clause that is supplied is not
-     evaluated when exit occurs due to thereis.
+*    The until construct executes any finally clause.  Since thereis uses
+     the return-from special operator to terminate iteration, any finally
+     clause that is supplied is not evaluated when exit occurs due to thereis.
 
 The while construct allows iteration to continue until the supplied form
 evaluates to false.  The supplied form is reevaluated at the location of
@@ -769,18 +761,13 @@ finally clauses will be executed.
 
 There are two differences between the never and until constructs:
 
-*
-     The until construct does not return t or nil based on the value of
+*    The until construct does not return t or nil based on the value of
      the supplied form.
 
-*
-     The until construct does not bypass any finally clauses.  Since never
-     uses
-
-     the return-from special operator
-
-     to terminate iteration, any finally clause that is supplied is not
-     evaluated when exit occurs due to never.
+*    The until construct does not bypass any finally clauses.  Since never
+     uses the return-from special operator to terminate iteration, any
+     finally clause that is supplied is not evaluated when exit occurs due
+     to never.
 
 In most cases it is not necessary to use loop-finish because other loop
 control clauses terminate the loop.  The macro loop-finish is used to
