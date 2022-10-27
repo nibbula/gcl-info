@@ -19,13 +19,9 @@ A boa lambda list is used only in a defstruct form, when explicitly
 specifying the lambda list of a constructor function (sometimes called a
 "boa constructor").
 
-The &optional, &rest, &aux,
-
-&key, and &allow-other-keys
-
-lambda list keywords are recognized in a boa lambda list.  The way these
-lambda list keywords differ from their use in an ordinary lambda list
-follows.
+The &optional, &rest, &aux, &key, and &allow-other-keys lambda list keywords
+are recognized in a boa lambda list.  The way these lambda list keywords
+differ from their use in an ordinary lambda list follows.
 
 Consider this example, which describes how destruct processes its
 :constructor option.
@@ -236,74 +232,54 @@ Safe and Unsafe Calls
 A call is a safe call if each of the following is either safe code or
 system code (other than system code that results from macro expansion of
 programmer code):
-*
-     the call.
 
-*
-     the definition of the function being called.
+*  the call.
 
-*
-     the point of functional evaluation
+*  the definition of the function being called.
+
+*  the point of functional evaluation
 
 The following special cases require some elaboration:
 
-*
-     If the function being called is a generic function, it is considered
-     safe if all of the following are
+*    If the function being called is a generic function, it is considered
+     safe if all of the following are safe code or system code:
 
-     safe code or system code:
+    - its definition (if it was defined explicitly).
 
-    -
-          its definition (if it was defined explicitly).
+    - the method definitions for all applicable methods.
 
-    -
-          the method definitions for all applicable methods.
+    - the definition of its method combination.
 
-    -
-          the definition of its method combination.
-
-*
-     For the form (coerce x 'function), where x is a lambda expression,
+*    For the form (coerce x 'function), where x is a lambda expression,
      the value of the optimize quality safety in the global environment at
      the time the coerce is executed applies to the resulting function.
 
-*
-     For a call to the function ensure-generic-function, the value of the
+*    For a call to the function ensure-generic-function, the value of the
      optimize quality safety in the environment object passed as the
      :environment argument applies to the resulting generic function.
 
-*
-     For a call to compile with a lambda expression as the argument, the
+*    For a call to compile with a lambda expression as the argument, the
      value of the optimize quality safety in the global environment at the
      time compile is called applies to the resulting compiled function.
 
-*
-     For a call to compile with only one argument, if the original
+*    For a call to compile with only one argument, if the original
      definition of the function was safe, then the resulting compiled
      function must also be safe.
 
-*
-     A call to a method by call-next-method must be considered safe if
-     each of the following is
+*    A call to a method by call-next-method must be considered safe if
+     each of the following is safe code or system code:
 
-     safe code or system code:
-
-    -
-          the definition of the generic function (if it was defined
+    -     the definition of the generic function (if it was defined
           explicitly).
 
-    -
-          the method definitions for all applicable methods.
+    -     the method definitions for all applicable methods.
 
-    -
-          the definition of the method combination.
+    -     the definition of the method combination.
 
-    -
-          the point of entry into the body of the method defining form,
+    -     the point of entry into the body of the method defining form,
           where the binding of call-next-method is established.
 
-    -
-          the point of functional evaluation of the name call-next-method.
+    -     the point of functional evaluation of the name call-next-method.
 
 An unsafe call is a call that is not a safe call.
 
@@ -995,12 +971,10 @@ Notes::
 The following effects are logical consequences of the definition of
 eval-when:
 
-*
-     Execution of a single eval-when expression executes the body code at
+*    Execution of a single eval-when expression executes the body code at
      most once.
 
-*
-     Macros intended for use in top level forms should be written so that
+*    Macros intended for use in top level forms should be written so that
      side-effects are done by the forms in the macro expansion.  The
      macro-expander itself should not do the side-effects.
 
@@ -1020,8 +994,7 @@ eval-when:
      Adherence to this convention means that such macros behave
      intuitively when appearing as non-top-level forms.
 
-*
-     Placing a variable binding around an eval-when reliably captures the
+*    Placing a variable binding around an eval-when reliably captures the
      binding because the compile-time-too mode cannot occur (i.e.,
      introducing a variable binding means that the eval-when is not a top
      level form).  For example,
@@ -1245,7 +1218,7 @@ compiler-macro-function                                          [Accessor]
 
 `compiler-macro-function'  name &optional environment =>  function
 
-(setf (`         compiler-macro-function' name &optional environment)
+(setf (`compiler-macro-function' name &optional environment)
 new-function)
 Arguments and Values::
 ......................

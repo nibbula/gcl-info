@@ -67,26 +67,22 @@ objects by the file compiler:
      files are defined consistently at compile time and load time.
      Conforming programs must satisfy the following requirements:
 
-    1.
-          The current package when a top level form in the file is
+    1.    The current package when a top level form in the file is
           processed by compile-file must be the same as the current package
           when the code corresponding to that top level form in the
           compiled file is executed by load.  In particular:
 
-         a.
-               Any top level form in a file that alters the current
+         a.    Any top level form in a file that alters the current
                package must change it to a package of the same name both
                at compile time and at load time.
 
-         b.
-               If the first non-atomic top level form in the file is not
+         b.    If the first non-atomic top level form in the file is not
                an in-package form, then the current package at the time
                load is called must be a package with the same name as the
                package that was the current package at the time
                compile-file was called.
 
-    2.
-          For all symbols appearing lexically within a top level form that
+    2.    For all symbols appearing lexically within a top level form that
           were accessible in the package that was the current package
           during processing of that top level form at compile time, but
           whose home package was another package, at load time there must
@@ -94,8 +90,7 @@ objects by the file compiler:
           load-time current package and in the package with the same name
           as the compile-time home package.
 
-    3.
-          For all symbols represented in the compiled file that were
+    3.    For all symbols represented in the compiled file that were
           external symbols in their home package at compile time, there
           must be a symbol with the same name that is an external symbol
           in the package with the same name at load time.
@@ -289,14 +284,11 @@ Some iteration forms include step, end-test, or result subforms that are
 also included in the scope of declarations that appear in the iteration
 form.  Specifically, the iteration forms and subforms involved are:
 
-*
-     do, do*: step-forms, end-test-form, and result-forms.
+*    do, do*: step-forms, end-test-form, and result-forms.
 
-*
-     dolist, dotimes: result-form
+*    dolist, dotimes: result-form
 
-*
-     do-all-symbols, do-external-symbols, do-symbols: result-form
+*    do-all-symbols, do-external-symbols, do-symbols: result-form
 
 * Menu:
 
