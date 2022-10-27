@@ -35,4 +35,4 @@ A. 1. Dump into `~/info` or something.
 
 ♥ to [William F. Schelter](https://www.gnu.org/software/gcl/) and everyone who made this.
 
-🖕 to certain international standards bodies.
+🖕 to specification hoarders.
