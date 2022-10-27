@@ -480,7 +480,7 @@ parameter variable has yet been bound (including its own parameter
 variable).
 
 A keyword-name can be any symbol, but by convention is normally a
-keyword_1; all standardized functions follow that convention.
+keyword[1]; all standardized functions follow that convention.
 
 An ordinary lambda list has five parts, any or all of which may be empty.
 For information about the treatment of argument mismatches, see *Note
