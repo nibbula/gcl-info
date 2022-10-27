@@ -466,8 +466,8 @@ The syntax for ordinary lambda lists is as follows:
 lambda-list ::=({var}*
                  [&optional {var | (var [init-form [supplied-p-parameter]])}*]
                  [&rest var]
-                 [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}* pt [&allow-other-keys]]
-                 [&aux {var | (var [init-form])}*])                
+                 [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}* [&allow-other-keys]]
+                 [&aux {var | (var [init-form])}*])
 
 A var or supplied-p-parameter must be a symbol that is not the name of a
 constant variable.
