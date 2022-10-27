@@ -109,8 +109,8 @@ A defsetf lambda list has the following syntax:
 lambda-list ::=({var}*
                 [&optional {var | (var [init-form [supplied-p-parameter]])}*]
                 [&rest var]
-                [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}* pt [&allow-other-keys]]
-                [&environment var]
+                [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}* [&allow-other-keys]]
+                [&environment var])
 
 A defsetf lambda list can contain the lambda list keywords shown in Figure
 3-19.
