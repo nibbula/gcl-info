@@ -1129,7 +1129,7 @@ File: gcl.info,  Node: *compile-file-pathname*,  Next: *load-pathname*,  Prev: *
 Value Type::
 ............
 
-The value of *compile-file-pathname* must always be a pathname          or
+The value of *compile-file-pathname* must always be a pathname or
 nil.  The value of *compile-file-truename* must always be a physical
 pathname or nil.
 
@@ -1230,7 +1230,7 @@ implementation-dependent.
 Description::
 .............
 
-The value of *compile-print*   is the default value of the :print argument
+The value of *compile-print* is the default value of the :print argument
 to compile-file.  The value of *compile-verbose* is the default value of
 the :verbose argument to compile-file.
 
@@ -1253,13 +1253,13 @@ a generalized boolean.
 Initial Value::
 ...............
 
-The initial value of *load-print*   is false.  The initial value of
+The initial value of *load-print* is false.  The initial value of
 *load-verbose* is implementation-dependent.
 
 Description::
 .............
 
-The value of *load-print*   is the default value of the :print argument
+The value of *load-print* is the default value of the :print argument
 to load.  The value of *load-verbose* is the default value of the :verbose
 argument to load.
 
