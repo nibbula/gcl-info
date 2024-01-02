@@ -574,12 +574,12 @@ System Construction Dictionary
 * load::
 * with-compilation-unit::
 * *features*::
-* *compile-file-pathname*::
+* *compile-file-pathname*, *compile-file-truename*: *compile-file-pathname*.
 * *load-pathname*, *load-truename*: *load-pathname*.
-* *compile-print*::
-* *load-print*::
+* *compile-print*, *compile-verbose*: *compile-print*.
+* *load-print*, *load-verbose*: *load-print*.
 * *modules*::
-* provide::
+* provide, require: provide.
 
 
 File: gcl.info,  Node: compile-file,  Next: compile-file-pathname,  Prev: System Construction Dictionary,  Up: System Construction Dictionary
