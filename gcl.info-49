@@ -774,13 +774,13 @@ Reader Dictionary
 * readtable::
 * copy-readtable::
 * make-dispatch-macro-character::
-* read::
+* read, read-preserving-whitespace: read.
 * read-delimited-list::
 * read-from-string::
 * readtable-case::
 * readtablep::
-* set-dispatch-macro-character::
-* set-macro-character::
+* set-dispatch-macro-character, get-dispatch-macro-character: set-dispatch-macro-character.
+* set-macro-character, get-macro-character: set-macro-character.
 * set-syntax-from-char::
 * with-standard-io-syntax::
 * *read-base*::
