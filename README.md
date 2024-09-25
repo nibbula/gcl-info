@@ -1,3 +1,5 @@
+# Moved to https://codeberg.org/nibbula/gcl-info
+
 ### Info files for Common Lisp
 
 w/minor fixes, split out from GCL for your (or mostly my) convenience.
